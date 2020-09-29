@@ -24,8 +24,8 @@ public class GenerateSubscribers {
         Integer ageFrom = Integer.valueOf(properties.getProperty("age.from"));
         Integer ageTo = Integer.valueOf(properties.getProperty("age.to"));
         Random random = new Random();
-        RandomAccessFile file = new RandomAccessFile(maleNames,"r");
-        System.out.println(file.readLine());
+//        RandomAccessFile file = new RandomAccessFile(maleNames,"r");
+//        System.out.println(file.readLine());
         try(PrintWriter writer = new PrintWriter(new FileWriter(subs));
             Scanner scannermaleNames = new Scanner(new FileInputStream(maleNames));
             Scanner scannermaleSnames = new Scanner(new FileInputStream(maleSnames))) {
