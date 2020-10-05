@@ -3,13 +3,13 @@
 <suite name="Failed suite [Base Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Login Tests(failed)" verbose="0">
     <classes>
-      <class name="com.ac.automation.LoginTests">
+      <class name="DecisionAutom.CreateMerchantTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="testUntitledTestCase"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ac.automation.LoginTests -->
+      </class> <!-- DecisionAutom.CreateMerchantTest -->
     </classes>
   </test> <!-- Login Tests(failed) -->
 </suite> <!-- Failed suite [Base Suite] -->

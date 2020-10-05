@@ -4,7 +4,9 @@
 <suite name="Base Suite">
     <test name="Login Tests">
         <classes>
-            <class name="com.ac.automation.LoginTests" />
+            <!--class name="com.ac.automation.LoginTests" /-->
+            <class name="DecisionAutom.CreateMerchantTest" />
         </classes>
+
     </test>
 </suite>

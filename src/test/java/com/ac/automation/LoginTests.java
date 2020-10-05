@@ -18,7 +18,7 @@ public class LoginTests {
     @BeforeClass(alwaysRun = true)
     public void setUp () throws Exception {
         //System.setProperty("webdriver.chrome.driver", "D:/Telesens/SKMaven/drivers/chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver", "D:/Telesens/SKMaven/drivers/geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "G:/Java/TS_Maven/drivers/geckodriver.exe");
         //driver = new ChromeDriver();
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
