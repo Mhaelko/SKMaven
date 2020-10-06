@@ -3,6 +3,7 @@ package DecisionAutom;
         import java.util.concurrent.TimeUnit;
 
         import org.openqa.selenium.chrome.ChromeDriver;
+        import org.openqa.selenium.support.ui.WebDriverWait;
         import org.testng.annotations.*;
         import static org.testng.Assert.*;
         import org.openqa.selenium.*;
@@ -16,7 +17,7 @@ public class CreateMerchantTest {
 
     @BeforeClass(alwaysRun = true)
     public void setUp () throws Exception {
-        System.setProperty("webdriver.chrome.driver", "D:/Telesens/SKMaven/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "G:/Java/TS_Maven/drivers/chromedriver.exe");
         //System.setProperty("webdriver.gecko.driver", "G:/Java/TS_Maven/drivers/geckodriver.exe");
         driver = new ChromeDriver();
         //driver = new FirefoxDriver();
@@ -36,13 +37,17 @@ public class CreateMerchantTest {
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).clear();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).sendKeys("ТестОтчество");
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).clear();
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).sendKeys("Ленинградская область");
+//        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).clear();
+//        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).sendKeys("Ленинградская область");
 
 //        Select cbRegion = new Select(driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")));
 //        cbRegion.selectByVisibleText("Ленинградская область");
-//        driver.findElement(By.xpath("(//input[@type='text'])[4]")).click();
-//        driver.findElement(By.xpath("//div[@id='dx-b5639145-ea3b-8a57-c3d3-151ba82aa59c']/div/div/div/div[2]/div[8]/div")).click();
+       // driver.findElement(By.xpath("(//input[@type='text'])[4]")).click();
+        driver.findElement(By.xpath("//div[@role='button']")).click();
+        driver.findElement(By.xpath("//div[@role='button']")).sendKeys("Ленинградская область");
+
+        // WebDriverWait wait = new WebDriverWait(driver, 10);
+        driver.findElement(By.xpath("/html/body/div/div/div/div/div[1]/div/div[1]/div[2]/div[4]/div/text()")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBoxContainer")).click();
         driver.findElement(By.xpath("(//input[@type='text'])[6]")).click();
         driver.findElement(By.xpath("//div[@id='dx-e11e231a-a92a-5d04-5a28-15a7db2b6ca8']/div/div/div/div[2]/div[12]/div")).click();
