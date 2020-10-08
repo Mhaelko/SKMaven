@@ -1,4 +1,0 @@
-# Created at 2020-10-01T17:37:57.831
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Telesens\SKMaven\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-

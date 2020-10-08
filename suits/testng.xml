@@ -2,11 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Base Suite">
-    <test name="Login Tests">
+    <!--test name="Login Tests">
         <classes>
-            <!--class name="com.ac.automation.LoginTests" /-->
-            <class name="DecisionAutom.CreateMerchantTest" />
+            <class name="com.ac.automation.LoginTests" />
+
         </classes>
 
+    </test-->
+    <test name="Market Tests">
+        <parameter name="browser" value="chrome"/>
+        <packages>
+            <package name="DecisionAutom"/>
+        </packages>
     </test>
+
+
 </suite>

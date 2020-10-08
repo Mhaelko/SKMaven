@@ -1,1 +1,3 @@
+Base\BaseTest.class
 DecisionAutom\CreateMerchantTest.class
+com\ac\automation\LoginTests.class

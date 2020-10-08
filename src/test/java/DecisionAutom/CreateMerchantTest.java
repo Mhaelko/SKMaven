@@ -1,45 +1,35 @@
 package DecisionAutom;
-        import java.time.Duration;
-        import java.util.regex.Pattern;
-        import java.util.concurrent.TimeUnit;
+import Base.BaseTest;
+import org.openqa.selenium.By;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
 
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.support.ui.ExpectedCondition;
-        import org.openqa.selenium.support.ui.ExpectedConditions;
-        import org.openqa.selenium.support.ui.WebDriverWait;
-        import org.testng.annotations.*;
-        import static org.testng.Assert.*;
-        import org.openqa.selenium.*;
-        import org.openqa.selenium.firefox.FirefoxDriver;
-        import org.openqa.selenium.support.ui.Select;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-public class CreateMerchantTest {
-    private WebDriver driver;
-    private boolean acceptNextAlert = true;
-    private StringBuffer verificationErrors = new StringBuffer();
+public class CreateMerchantTest extends BaseTest {
 
-    @BeforeClass(alwaysRun = true)
-    public void setUp () throws Exception {
-        System.setProperty("webdriver.chrome.driver", "D:/Telesens/SKMaven/drivers/chromedriver.exe");
-        //System.setProperty("webdriver.gecko.driver", "G:/Java/TS_Maven/drivers/geckodriver.exe");
-        driver = new ChromeDriver();
-        //driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-    }
-
-    @Test
-    public void fillMerchantRequest() throws Exception {
+    @Test(dataProvider = "merchDataProvider")
+   // @Ignore
+    public void fillMerchantRequest(String LastName, String FirstName, String SecondName) throws Exception {
+        System.out.println(LastName);
         driver.get("https://devcloud.turnkey-lender.com/PluginWebapp/Merchant_Registration/Merchant_Registration.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef");
         //driver.wait(10000);
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox")).clear();
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox")).sendKeys("ТестФамилия");
+        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox")).sendKeys(LastName);
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_firstname_TextBox")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_firstname_TextBox")).clear();
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_firstname_TextBox")).sendKeys("ТестИмя");
+        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_firstname_TextBox")).sendKeys(FirstName);
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).clear();
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).sendKeys("ТестОтчество");
+        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).sendKeys(SecondName);
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).click();
         driver.findElement(By.xpath("//div[contains(text(), 'Республика Алтай')]")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_city_ComboBox")).click();
@@ -71,14 +61,44 @@ public class CreateMerchantTest {
        // driver.findElement(By.xpath("//body[@id='ctl00_Body']/div[2]")).click();
     }
 
-    @AfterClass(alwaysRun = true)
-    public void tearDown() throws Exception {
-        //driver.quit();
-        String verificationErrorString = verificationErrors.toString();
-        if (!"".equals(verificationErrorString)) {
-            fail(verificationErrorString);
-        }
+    @Test
+    @Ignore
+    public void submitMerchantRequest() throws Exception {
+        driver.get("https://devcloud.turnkey-lender.com/PluginWebapp/Market_Admin/Merchant_requests/Registration_requests.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef");
+        driver.findElement(By.id("UserName")).click();
+        driver.findElement(By.id("UserName")).clear();
+        driver.findElement(By.id("UserName")).sendKeys("s");
+        driver.findElement(By.id("password")).click();
+        driver.findElement(By.id("password")).clear();
+        driver.findElement(By.id("password")).sendKeys("s");
+        driver.findElement(By.xpath("//form[@action='/PluginWebapp/Login.aspx/LoginUser']")).click();
+        driver.findElement(By.xpath("//button[@id='LoginButton']/span")).click();
+        //driver.findElement(By.xpath("//href[contains(text(), 'Заявки на рассмотрение')]")).click();
+        //driver.get("https://devcloud.turnkey-lender.com/PluginWebapp/Market_Admin/Merchant_requests/Registration_requests.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef");
     }
+    @DataProvider
+    public Object[][] merchDataProvider() throws FileNotFoundException {
+        String path = "D:/Telesens/SKMaven/test data/FIO.csv";
+        List<String> lines = new ArrayList<>();
+        Scanner scanner = new Scanner(new FileInputStream(path), StandardCharsets.UTF_8);
+        while (scanner.hasNextLine()) {
+            String nextLine = scanner.nextLine();
+            System.out.println(nextLine);
+            lines.add(nextLine);
+        }
+        scanner.close();
+        Object [][] data = new Object[lines.size()][3];
+        for (int i = 0; i < lines.size(); i++) {
+            String[] lineParts = lines.get(i).split(",");
+            System.arraycopy(lineParts, 0, data[i], 0, lineParts.length);
+            // Обычный способ
+//            for (int j = 0; j < lineParts.length; j++) {
+//                data[i][j] = lineParts[j];
+//            }
+        }
+        return data;
+    }
+
 
 
 
