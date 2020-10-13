@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class CreateMerchantTest extends BaseTest {
 
     @Test(dataProvider = "merchDataProvider")
-   // @Ignore
+    //@Ignore
     public void fillMerchantRequest(String LastName, String FirstName, String SecondName) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         Date date = format.parse("12/12/1976");
@@ -37,8 +37,13 @@ public class CreateMerchantTest extends BaseTest {
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).clear();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).sendKeys(SecondName);
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_Inner")).click();
-        driver.findElement(By.xpath("(//input[@type='text'])[4]")).clear();
-        driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys(pDate);
+        //driver.findElement(By.xpath("(//input[@type='text'])[4]")).clear();
+       // driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys(pDate);
+        //driver.findElement(By.xpath("//*[@name='Merch_DOB']")).clear();
+        //driver.findElement(By.xpath("//*[@name='Merch_DOB']")).sendKeys(pDate);
+        driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_TextBox']//input[@type='text']")).clear();
+        driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_TextBox']//input[@type='text']")).sendKeys(pDate);
+
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_Gender_ComboBox")).click();
         driver.findElement(By.xpath("//div[contains(text(), 'Мужской')]")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).click();
@@ -84,12 +89,14 @@ public class CreateMerchantTest extends BaseTest {
         driver.findElement(By.id("password")).sendKeys("s");
         driver.findElement(By.xpath("//form[@action='/PluginWebapp/Login.aspx/LoginUser']")).click();
         driver.findElement(By.xpath("//button[@id='LoginButton']/span")).click();
-        //driver.findElement(By.xpath("//href[contains(text(), 'Заявки на рассмотрение')]")).click();
+        //driver.findElement(By.xpath("//span[contains(text(),'Заявки на рассмотрение')]")).isSelected();
+        driver.findElement(By.xpath("//a[contains(@href,\"Registration_requests.aspx\")]")).click();
+
         //driver.get("https://devcloud.turnkey-lender.com/PluginWebapp/Market_Admin/Merchant_requests/Registration_requests.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef");
     }
     @DataProvider
     public Object[][] merchDataProvider() throws FileNotFoundException {
-        String path = "G:/Java/TS_Maven/test data/FIO.csv";
+        String path = this.path+"test data/FIO.csv";
         List<String> lines = new ArrayList<>();
         Scanner scanner = new Scanner(new FileInputStream(path), StandardCharsets.UTF_8);
         while (scanner.hasNextLine()) {

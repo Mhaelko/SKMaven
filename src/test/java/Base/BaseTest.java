@@ -21,9 +21,9 @@ public class BaseTest {
     protected String path;
     private StringBuffer verificationErrors = new StringBuffer();
 
-    @Parameters({"browser","driverpath"})
+    @Parameters({"browser","path"})
     @BeforeClass(alwaysRun = true)
-    public void setUp (@Optional("chrome") String browser, @Optional("less") String driverpath) throws Exception {
+    public void setUp (@Optional("chrome") String browser, @Optional("less") String ipath) throws Exception {
 
         Properties properties = new Properties();
         try(InputStream is = BaseTest.class.getClassLoader().getResourceAsStream("decision.properties")) {
@@ -31,23 +31,23 @@ public class BaseTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if(driverpath.equals("less")){
-            path = properties.getProperty("driver.less.path");
-        } else if (driverpath.equals("home")){
-            path = properties.getProperty("driver.home.path");
+        if(ipath.equals("less")){
+            path = properties.getProperty("less.path");
+        } else if (ipath.equals("home")){
+            path = properties.getProperty("home.path");
         }
         else{
-            path = properties.getProperty("driver.home.path");
+            path = properties.getProperty("home.path");
         }
         if(browser.equals("chrome")){
-            System.setProperty("webdriver.chrome.driver", path +"chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", path +"drivers/chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browser.equals("firefox")){
-            System.setProperty("webdriver.gecko.driver", path+"geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", path+"drivers/geckodriver.exe");
             driver = new FirefoxDriver();
         }
         else{
-            System.setProperty("webdriver.chrome.driver", path +"chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", path +"drivers/chromedriver.exe");
             driver = new ChromeDriver();
         }
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

@@ -11,7 +11,7 @@
     </test-->
     <test name="Market Tests">
         <parameter name="browser" value="chrome"/>
-        <parameter name="driverpath" value="home"/>
+        <parameter name="driverpath" value="less"/>
         <packages>
             <package name="DecisionAutom"/>
         </packages>
