@@ -9,7 +9,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,7 +20,11 @@ public class CreateMerchantTest extends BaseTest {
     @Test(dataProvider = "merchDataProvider")
    // @Ignore
     public void fillMerchantRequest(String LastName, String FirstName, String SecondName) throws Exception {
-        System.out.println(LastName);
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = format.parse("12/12/1976");
+        String pDate = format.format(date);
+        System.out.println(pDate);
+        //System.out.println(LastName);
         driver.get("https://devcloud.turnkey-lender.com/PluginWebapp/Merchant_Registration/Merchant_Registration.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef");
         //driver.wait(10000);
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox")).click();
@@ -30,6 +36,11 @@ public class CreateMerchantTest extends BaseTest {
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).clear();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).sendKeys(SecondName);
+        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_Inner")).click();
+        driver.findElement(By.xpath("(//input[@type='text'])[4]")).clear();
+        driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys(pDate);
+        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_Gender_ComboBox")).click();
+        driver.findElement(By.xpath("//div[contains(text(), 'Мужской')]")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).click();
         driver.findElement(By.xpath("//div[contains(text(), 'Республика Алтай')]")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_city_ComboBox")).click();
@@ -53,10 +64,10 @@ public class CreateMerchantTest extends BaseTest {
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_email_TextBox")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_email_TextBox")).clear();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_email_TextBox")).sendKeys("test@test.test");
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_description_TextBox")).click();
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_description_TextBox")).clear();
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_description_TextBox")).sendKeys("Тест о бизнесе");
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Agreement_Inner")).click();
+        driver.findElement(By.name("Merch_description")).click();
+        driver.findElement(By.name("Merch_description")).clear();
+        driver.findElement(By.name("Merch_description")).sendKeys("Тест о бизнесе");
+        driver.findElement(By.xpath("//div[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Agreement_Inner']")).click();
        // driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_send_request_Inner")).click();
        // driver.findElement(By.xpath("//body[@id='ctl00_Body']/div[2]")).click();
     }
@@ -78,7 +89,7 @@ public class CreateMerchantTest extends BaseTest {
     }
     @DataProvider
     public Object[][] merchDataProvider() throws FileNotFoundException {
-        String path = "D:/Telesens/SKMaven/test data/FIO.csv";
+        String path = "G:/Java/TS_Maven/test data/FIO.csv";
         List<String> lines = new ArrayList<>();
         Scanner scanner = new Scanner(new FileInputStream(path), StandardCharsets.UTF_8);
         while (scanner.hasNextLine()) {

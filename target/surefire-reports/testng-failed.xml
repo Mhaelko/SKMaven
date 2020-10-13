@@ -2,12 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Base Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Market Tests(failed)" verbose="0">
+    <parameter name="driverpath" value="home"/>
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="DecisionAutom.CreateMerchantTest">
         <methods>
           <include name="tearDown"/>
-          <include name="fillMerchantRequest" invocation-numbers="0 1 2"/>
+          <include name="fillMerchantRequest" invocation-numbers="0 1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- DecisionAutom.CreateMerchantTest -->
