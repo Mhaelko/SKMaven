@@ -1,5 +1,10 @@
 package DecisionAutom;
 import Base.BaseTest;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Ignore;
@@ -7,21 +12,19 @@ import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class CreateMerchantTest extends BaseTest {
 
     @Test(dataProvider = "merchDataProvider")
     //@Ignore
-    public void fillMerchantRequest(String LastName, String FirstName, String SecondName) throws Exception {
+    public void fillMerchantRequest(String LastName, String FirstName, String SecondName, String BirthDate) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        Date date = format.parse("12/12/1976");
+        Date date = format.parse(BirthDate);
         String pDate = format.format(date);
         System.out.println(pDate);
         //System.out.println(LastName);
@@ -38,7 +41,7 @@ public class CreateMerchantTest extends BaseTest {
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox")).sendKeys(SecondName);
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_Inner")).click();
         //driver.findElement(By.xpath("(//input[@type='text'])[4]")).clear();
-       // driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys(pDate);
+        // driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys(pDate);
         //driver.findElement(By.xpath("//*[@name='Merch_DOB']")).clear();
         //driver.findElement(By.xpath("//*[@name='Merch_DOB']")).sendKeys(pDate);
         driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_TextBox']//input[@type='text']")).clear();
@@ -73,8 +76,8 @@ public class CreateMerchantTest extends BaseTest {
         driver.findElement(By.name("Merch_description")).clear();
         driver.findElement(By.name("Merch_description")).sendKeys("Тест о бизнесе");
         driver.findElement(By.xpath("//div[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Agreement_Inner']")).click();
-       // driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_send_request_Inner")).click();
-       // driver.findElement(By.xpath("//body[@id='ctl00_Body']/div[2]")).click();
+        // driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_send_request_Inner")).click();
+        // driver.findElement(By.xpath("//body[@id='ctl00_Body']/div[2]")).click();
     }
 
     @Test
@@ -94,10 +97,32 @@ public class CreateMerchantTest extends BaseTest {
 
         //driver.get("https://devcloud.turnkey-lender.com/PluginWebapp/Market_Admin/Merchant_requests/Registration_requests.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef");
     }
+
     @DataProvider
-    public Object[][] merchDataProvider() throws FileNotFoundException {
-        String path = this.path+"test data/FIO.csv";
-        List<String> lines = new ArrayList<>();
+    public Object[][] merchDataProvider() throws IOException {
+        String path = this.path + "test data/Merchants data.xlsx";
+        FileInputStream is = new FileInputStream(path);
+        Workbook workbook = new XSSFWorkbook(is);
+        Sheet sheet = workbook.getSheet("Registration");
+        int lastRowNum = sheet.getLastRowNum();
+        Row row = sheet.getRow(0);
+        int lastCellNum = row.getLastCellNum();
+        Object[][] data = new Object[lastRowNum][lastCellNum];
+        for (int i = 1; i <= lastRowNum; i++) {
+            row = sheet.getRow(i);
+            for (int j = 0; j < lastCellNum; j++) {
+                 Cell cell = row.getCell(j);
+                 data[i - 1][j] = cell.getStringCellValue();
+            }
+        }
+        return data;
+//      for (Object[] datum : data) {
+//           System.out.println(Arrays.toString(datum));
+//      }
+    }
+
+}
+/*        List<String> lines = new ArrayList<>();
         Scanner scanner = new Scanner(new FileInputStream(path), StandardCharsets.UTF_8);
         while (scanner.hasNextLine()) {
             String nextLine = scanner.nextLine();
@@ -114,10 +139,25 @@ public class CreateMerchantTest extends BaseTest {
 //                data[i][j] = lineParts[j];
 //            }
         }
-        return data;
+
+        try(FileInputStream is = new FileInputStream(path)){
+            Workbook workbook = new XSSFWorkbook(is);
+            Sheet sheet = workbook.getSheet("Registration");
+            //sheet.getLastRowNum()
+            Row row = sheet.getRow(0);
+            Cell cell1 = row.getCell(0);
+            Cell cell2 = row.getCell(1);
+
+            System.out.println(cell1.getStringCellValue());
+            System.out.println(cell2.getNumericCellValue());
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+
     }
 
 
 
 
-}
+}*/
