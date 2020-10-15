@@ -11,9 +11,9 @@
     </test-->
     <test name="Market Tests">
         <parameter name="browser" value="chrome"/>
-        <parameter name="path" value="home"/>
+        <parameter name="path" value="less"/>
         <packages>
-            <package name="DecisionAutom"/>
+            <package name="market.tests"/>
         </packages>
     </test>
     <!--test name="Market Tests for firefox">

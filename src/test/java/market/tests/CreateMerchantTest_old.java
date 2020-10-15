@@ -1,5 +1,6 @@
-package DecisionAutom;
+package market.tests;
 import Base.BaseTest;
+import market.tests.pages.MerchantRegistrationPage;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -18,10 +19,10 @@ import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class CreateMerchantTest extends BaseTest {
+public class CreateMerchantTest_old extends BaseTest {
 
     @Test(dataProvider = "merchDataProvider")
-    //@Ignore
+    @Ignore
     public void fillMerchantRequest(String LastName, String FirstName, String SecondName, String BirthDate) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         Date date = format.parse(BirthDate);
@@ -79,7 +80,24 @@ public class CreateMerchantTest extends BaseTest {
         // driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_send_request_Inner")).click();
         // driver.findElement(By.xpath("//body[@id='ctl00_Body']/div[2]")).click();
     }
-
+    @Test(dataProvider = "merchDataProvider")
+    @Ignore
+    public void fillMerchantRequestUsingPage(String LastName, String FirstName, String SecondName) {
+        MerchantRegistrationPage merchantRegistrationPage = new MerchantRegistrationPage(driver);
+        merchantRegistrationPage.goToPage();
+        merchantRegistrationPage.fillLastName(LastName);
+        merchantRegistrationPage.fillFirstName(FirstName);
+        merchantRegistrationPage.fillSecondName(SecondName);
+    }
+    @Test(dataProvider = "merchDataProvider")
+    @Ignore
+    public void fillMerchantRequestUsingPage2(String LastName, String FirstName, String SecondName) {
+        MerchantRegistrationPage merchantRegistrationPage = new MerchantRegistrationPage(driver)
+            .goToPage()
+            .fillLastName(LastName)
+            .fillFirstName(FirstName)
+            .fillSecondName(SecondName);
+    }
     @Test
     @Ignore
     public void submitMerchantRequest() throws Exception {

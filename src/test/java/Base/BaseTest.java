@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.fail;
 
-public class BaseTest {
+abstract public class BaseTest {
     protected WebDriver driver;
     protected String path;
     private StringBuffer verificationErrors = new StringBuffer();

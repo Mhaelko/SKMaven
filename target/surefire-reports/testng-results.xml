@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-14T22:40:05 EEST" name="Base Suite" finished-at="2020-10-14T22:40:50 EEST" duration-ms="44761">
+  <suite started-at="2020-10-15T21:11:44 EEST" name="Base Suite" finished-at="2020-10-15T21:12:09 EEST" duration-ms="25621">
     <groups>
     </groups>
-    <test started-at="2020-10-14T22:40:05 EEST" name="Market Tests" finished-at="2020-10-14T22:40:50 EEST" duration-ms="44761">
-      <class name="DecisionAutom.CreateMerchantTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:DecisionAutom.CreateMerchantTest@6f19ac19]" started-at="2020-10-14T22:40:05 EEST" name="setUp" finished-at="2020-10-14T22:40:10 EEST" duration-ms="4683" status="PASS">
+    <test started-at="2020-10-15T21:11:44 EEST" name="Market Tests" finished-at="2020-10-15T21:12:09 EEST" duration-ms="25621">
+      <class name="market.tests.MerchantsRegistrationTests">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@50dfbc58]" started-at="2020-10-15T21:11:44 EEST" name="setUp" finished-at="2020-10-15T21:11:49 EEST" duration-ms="4922" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,14 +16,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[home]]>
+                <![CDATA[less]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DecisionAutom.CreateMerchantTest@6f19ac19]" started-at="2020-10-14T22:40:10 EEST" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-14T22:40:23 EEST" duration-ms="12791" status="PASS">
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@50dfbc58]" started-at="2020-10-15T21:11:49 EEST" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-15T21:12:00 EEST" duration-ms="10516" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,16 @@
                 <![CDATA[12/12/1970]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[Мужской]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillMerchantRequest -->
-        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DecisionAutom.CreateMerchantTest@6f19ac19]" started-at="2020-10-14T22:40:23 EEST" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-14T22:40:37 EEST" duration-ms="13567" status="PASS">
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@50dfbc58]" started-at="2020-10-15T21:12:00 EEST" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-15T21:12:07 EEST" duration-ms="6907" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +76,16 @@
                 <![CDATA[21/05/1981]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[Женский]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillMerchantRequest -->
-        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DecisionAutom.CreateMerchantTest@6f19ac19]" started-at="2020-10-14T22:40:37 EEST" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-14T22:40:50 EEST" duration-ms="13251" status="PASS">
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@50dfbc58]" started-at="2020-10-15T21:12:07 EEST" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-15T21:12:09 EEST" duration-ms="2516" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,15 +107,20 @@
                 <![CDATA[05/03/1977]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[Мужской]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillMerchantRequest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DecisionAutom.CreateMerchantTest@6f19ac19]" started-at="2020-10-14T22:40:50 EEST" name="tearDown" finished-at="2020-10-14T22:40:50 EEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:market.tests.MerchantsRegistrationTests@50dfbc58]" started-at="2020-10-15T21:12:09 EEST" name="tearDown" finished-at="2020-10-15T21:12:09 EEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- DecisionAutom.CreateMerchantTest -->
+      </class> <!-- market.tests.MerchantsRegistrationTests -->
     </test> <!-- Market Tests -->
   </suite> <!-- Base Suite -->
 </testng-results>

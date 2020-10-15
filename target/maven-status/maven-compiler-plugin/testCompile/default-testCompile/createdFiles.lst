@@ -1,3 +1,6 @@
-com\ac\automation\LoginTests.class
+market\tests\MerchantsRegistrationTests.class
+Base\Test.class
+market\tests\pages\MerchantRegistrationPage.class
 Base\BaseTest.class
-DecisionAutom\CreateMerchantTest.class
+com\ac\automation\LoginTests.class
+market\tests\CreateMerchantTest_old.class
