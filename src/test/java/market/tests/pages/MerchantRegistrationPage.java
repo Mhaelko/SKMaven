@@ -40,6 +40,30 @@ public class MerchantRegistrationPage extends BasePage{
     @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_street_TextBox")
     private WebElement address;
 
+    @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_type_ComboBox")
+    private WebElement merchType;
+
+    @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_LEOrIP_ComboBox")
+    private WebElement leOrIP;
+
+    @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_OrgType_ComboBox")
+    private WebElement orgType;
+
+    @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_nameRU_TextBox")
+    private WebElement nameRU;
+
+    @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_mobilephone_TextBox")
+    private WebElement mobilephone;
+
+    @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_email_TextBox")
+    private WebElement email;
+
+    @FindBy(name="Merch_description")
+    private WebElement merchDescription;
+
+    @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Agreement_Inner")
+    private WebElement agreement;
+
     public MerchantRegistrationPage fillLastName(String LastName){
         fillTextField(lastName,LastName);
         return this;
@@ -85,9 +109,60 @@ public class MerchantRegistrationPage extends BasePage{
         return this;
     }
 
-    public MerchantRegistrationPage fillAddress(String Address){
-        address.clear();
-        address.sendKeys(Address);
+    public MerchantRegistrationPage fillAddress(String address){
+        this.address.clear();
+        this.address.sendKeys(address);
+        return this;
+    }
+
+    public MerchantRegistrationPage fillMerchType(String merchType){
+        this.merchType.click();
+        this.merchType.findElement(By.xpath(String.format(divTemplate,merchType))).click();
+        return this;
+    }
+
+    public MerchantRegistrationPage fillLeOrIP(String leOrIP){
+        this.leOrIP.click();
+        this.leOrIP.findElement(By.xpath(String.format(divTemplate,leOrIP))).click();
+        return this;
+    }
+
+    public MerchantRegistrationPage fillOrgType(String orgType){
+        this.orgType.click();
+        this.orgType.findElement(By.xpath(String.format(divTemplate,orgType))).click();
+        return this;
+    }
+
+    public MerchantRegistrationPage fillNameRU(String nameRU){
+        this.nameRU.click();
+        this.nameRU.clear();
+        this.nameRU.sendKeys(nameRU);
+        return this;
+    }
+
+    public MerchantRegistrationPage fillMobilephone(Double mobilephone){
+        this.mobilephone.click();
+        this.mobilephone.clear();
+        this.mobilephone.sendKeys(Double.toString(mobilephone));
+        return this;
+    }
+
+    public MerchantRegistrationPage fillEmail(String email){
+        this.email.click();
+        this.email.clear();
+        this.email.sendKeys(email);
+        return this;
+    }
+
+    public MerchantRegistrationPage fillMerchantDescription(String merchDescription){
+        this.merchDescription.click();
+        this.merchDescription.clear();
+        this.merchDescription.sendKeys(merchDescription);
+        return this;
+    }
+
+    public MerchantRegistrationPage fillAgreement(){
+        this.agreement.click();
         return this;
     }
 
