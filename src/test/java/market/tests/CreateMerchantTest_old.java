@@ -23,7 +23,7 @@ public class CreateMerchantTest_old extends BaseTest {
 
     @Test(dataProvider = "merchDataProvider")
     @Ignore
-    public void fillMerchantRequest(String LastName, String FirstName, String SecondName, String BirthDate) throws Exception {
+    public void fillMerchantRequest(String LastName, String FirstName, String SecondName, String BirthDate,String Sex, String Region, String City,String Address) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         Date date = format.parse(BirthDate);
         String pDate = format.format(date);
@@ -52,8 +52,12 @@ public class CreateMerchantTest_old extends BaseTest {
         driver.findElement(By.xpath("//div[contains(text(), 'Мужской')]")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_region_ComboBox")).click();
         driver.findElement(By.xpath("//div[contains(text(), 'Республика Алтай')]")).click();
-        driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_city_ComboBox")).click();
-        driver.findElement(By.xpath("//div[contains(text(), 'Азов')]")).click();
+        //driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_city_ComboBox")).click();
+        //driver.findElement(By.xpath("//div[contains(text(), 'Азов')]")).click();
+        driver.findElement(By.xpath("//div[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_city_ComboBox']//input[@name='Merch_city']/following-sibling::div/input")).clear();
+        driver.findElement(By.xpath("//div[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_city_ComboBox']//input[@name='Merch_city']/following-sibling::div/input")).sendKeys("Санкт");
+        //city.click();
+        driver.findElement(By.xpath("//div[contains(text(), 'Санкт-Петербург')]")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_street_Label")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_street_TextBox")).click();
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_street_TextBox")).clear();

@@ -2,5 +2,6 @@ market\tests\MerchantsRegistrationTests.class
 Base\Test.class
 market\tests\pages\MerchantRegistrationPage.class
 Base\BaseTest.class
+market\tests\pages\BasePage.class
 com\ac\automation\LoginTests.class
 market\tests\CreateMerchantTest_old.class

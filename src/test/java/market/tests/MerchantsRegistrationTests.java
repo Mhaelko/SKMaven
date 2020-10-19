@@ -2,6 +2,7 @@ package market.tests;
 
 import Base.BaseTest;
 import market.tests.pages.MerchantRegistrationPage;
+import okhttp3.Address;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -17,7 +18,7 @@ import java.io.IOException;
 public class MerchantsRegistrationTests extends BaseTest {
     @Test(dataProvider = "merchDataProvider")
     //@Ignore
-    public void fillMerchantRequest(String LastName, String FirstName, String SecondName,String BirthDate,String Sex, String Region, String City) {
+    public void fillMerchantRequest(String LastName, String FirstName, String SecondName,String BirthDate,String Sex, String Region, String City,String Address) {
         MerchantRegistrationPage merchantRegistrationPage = new MerchantRegistrationPage(driver)
                 .goToPage()
                 .fillLastName(LastName)
@@ -26,7 +27,8 @@ public class MerchantsRegistrationTests extends BaseTest {
                 .fillbirthDate(BirthDate)
                 .fillSex(Sex)
                 .fillRegion(Region)
-                .fillCity(City);
+                .fillCity(City)
+                .fillAddress(Address);
     }
 
     @DataProvider

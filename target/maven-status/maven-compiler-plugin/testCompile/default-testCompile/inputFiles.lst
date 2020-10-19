@@ -1,6 +1,7 @@
-D:\Telesens\SKMaven\src\test\java\Base\BaseTest.java
-D:\Telesens\SKMaven\src\test\java\market\tests\pages\BasePage.java
-D:\Telesens\SKMaven\src\test\java\Base\Test.java
-D:\Telesens\SKMaven\src\test\java\market\tests\CreateMerchantTest.java
-D:\Telesens\SKMaven\src\test\java\com\ac\automation\LoginTests.java
-D:\Telesens\SKMaven\src\test\java\market\tests\pages\MerchantRegistrationPage.java
+G:\Java\TS_Maven\src\test\java\market\tests\MerchantsRegistrationTests.java
+G:\Java\TS_Maven\src\test\java\Base\Test.java
+G:\Java\TS_Maven\src\test\java\market\tests\CreateMerchantTest_old.java
+G:\Java\TS_Maven\src\test\java\com\ac\automation\LoginTests.java
+G:\Java\TS_Maven\src\test\java\market\tests\pages\MerchantRegistrationPage.java
+G:\Java\TS_Maven\src\test\java\Base\BaseTest.java
+G:\Java\TS_Maven\src\test\java\market\tests\pages\BasePage.java
