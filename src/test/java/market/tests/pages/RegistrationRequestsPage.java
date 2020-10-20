@@ -1,40 +1,29 @@
 package market.tests.pages;
 
+import Base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class RegistrationRequestsPage extends BasePage{
+public class RegistrationRequestsPage extends BasePage {
 
     public RegistrationRequestsPage (WebDriver driver) {
         super(driver);
     }
 
-    @FindBy(id="UserName")
-    private WebElement login;
+    @FindBy(xpath="//div[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Registration_request_DPGroupBox6_RequestsGB_Inner']")
+    private WebElement grid;
 
-    @FindBy(id="password")
-    private WebElement password;
+    @FindBy(xpath="//div[@title='Apply filter']")
+    private WebElement gridFilterButton;
 
-    @FindBy(xpath="//button[@id='LoginButton']/span")
-    private WebElement button;
+    @FindBy(xpath="//td[@aria-label='Column ФИО, Filter cell']//div[@class='dx-texteditor-container']//input")
+    private WebElement gridFilter;
 
-    public RegistrationRequestsPage fillLogin(String login){
-        this.login.click();
-        this.login.clear();
-        this.login.sendKeys(login);
-        return this;
-    }
-
-    public RegistrationRequestsPage fillPassword(String password){
-        this.password.click();
-        this.password.clear();
-        this.password.sendKeys(password);
-        return this;
-    }
-
-    public RegistrationRequestsPage buttonClick(){
-        this.button.click();
+    public RegistrationRequestsPage fillgridFilter(String fio){
+        gridFilter.click();
+        gridFilter.sendKeys(fio);
+        gridFilterButton.click();
         return this;
     }
 

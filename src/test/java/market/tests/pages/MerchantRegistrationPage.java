@@ -1,12 +1,12 @@
 package market.tests.pages;
 
+import Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class MerchantRegistrationPage extends BasePage{
+public class MerchantRegistrationPage extends BasePage {
     private String divTemplate = "//div[contains(text(), '%s')]";
 
     //Обязательно!!!
@@ -155,9 +155,7 @@ public class MerchantRegistrationPage extends BasePage{
     }
 
     public MerchantRegistrationPage fillMerchantDescription(String merchDescription){
-        this.merchDescription.click();
-        this.merchDescription.clear();
-        this.merchDescription.sendKeys(merchDescription);
+        fillTextField(this.merchDescription,merchDescription);
         return this;
     }
 

@@ -1,25 +1,29 @@
 package Base;
 
 import LESS.Lesson11.FileReaderDemo;
+import LESS.Lesson12.LoggerDemo;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.fail;
 
 abstract public class BaseTest {
-    protected WebDriver driver;
+    protected EventFiringWebDriver driver;
     protected String path;
     private StringBuffer verificationErrors = new StringBuffer();
+    private static Logger LOG = LogManager.getLogger(BaseTest.class.getName());
 
     @Parameters({"browser","path"})
     @BeforeClass(alwaysRun = true)
@@ -33,6 +37,7 @@ abstract public class BaseTest {
         }
         if(ipath.equals("less")){
             path = properties.getProperty("less.path");
+
         } else if (ipath.equals("home")){
             path = properties.getProperty("home.path");
         }
@@ -41,16 +46,17 @@ abstract public class BaseTest {
         }
         if(browser.equals("chrome")){
             System.setProperty("webdriver.chrome.driver", path +"drivers/chromedriver.exe");
-            driver = new ChromeDriver();
+            driver = new EventFiringWebDriver(new ChromeDriver());
         } else if (browser.equals("firefox")){
             System.setProperty("webdriver.gecko.driver", path+"drivers/geckodriver.exe");
-            driver = new FirefoxDriver();
+            driver = new EventFiringWebDriver(new FirefoxDriver());
         }
         else{
             System.setProperty("webdriver.chrome.driver", path +"drivers/chromedriver.exe");
-            driver = new ChromeDriver();
+            driver = new EventFiringWebDriver(new ChromeDriver());
         }
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.register(new WebDriverEventListenerImplementation(path + "/test results/screenshots"));
     }
     @AfterClass(alwaysRun = true)
     public void tearDown() throws Exception {
@@ -59,5 +65,14 @@ abstract public class BaseTest {
         if (!"".equals(verificationErrorString)) {
             fail(verificationErrorString);
         }
+    }
+
+    @BeforeMethod
+    public void testStart(Method method, Object[] params){
+        LOG.info("Test {} started with parameters: {}", method.getName(), Arrays.toString(params));
+    }
+    @AfterMethod
+    public void testEnd(Method method, Object[] params){
+        LOG.info("Test {} finished ", method.getName());
     }
 }

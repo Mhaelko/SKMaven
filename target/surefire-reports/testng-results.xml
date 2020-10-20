@@ -2,12 +2,12 @@
 <testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-19T18:52:09 EEST" name="Base Suite" finished-at="2020-10-19T18:52:42 EEST" duration-ms="32877">
+  <suite started-at="2020-10-20T21:25:51 EEST" name="Base Suite" finished-at="2020-10-20T21:26:24 EEST" duration-ms="32995">
     <groups>
     </groups>
-    <test started-at="2020-10-19T18:52:09 EEST" name="Market Tests" finished-at="2020-10-19T18:52:42 EEST" duration-ms="32877">
+    <test started-at="2020-10-20T21:25:51 EEST" name="Market Tests" finished-at="2020-10-20T21:26:24 EEST" duration-ms="32995">
       <class name="market.tests.MerchantsRegistrationTests">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@4416d64f]" started-at="2020-10-19T18:52:09 EEST" name="setUp" finished-at="2020-10-19T18:52:16 EEST" duration-ms="6290" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:25:51 EEST" name="setUp" finished-at="2020-10-20T21:25:55 EEST" duration-ms="4209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userLogin()[pri:0, instance:market.tests.MerchantsRegistrationTests@4416d64f]" started-at="2020-10-19T18:52:16 EEST" name="userLogin" finished-at="2020-10-19T18:52:42 EEST" duration-ms="26525" status="PASS">
+        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:25:55 EEST" name="testStart" finished-at="2020-10-20T21:25:55 EEST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.userLogin()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4ba02375]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStart -->
+        <test-method signature="userLogin()[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:25:55 EEST" name="userLogin" finished-at="2020-10-20T21:26:24 EEST" duration-ms="28733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:market.tests.MerchantsRegistrationTests@4416d64f]" started-at="2020-10-19T18:52:42 EEST" name="tearDown" finished-at="2020-10-19T18:52:42 EEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:26:24 EEST" name="testEnd" finished-at="2020-10-20T21:26:24 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.userLogin()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4ba02375]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:26:24 EEST" name="tearDown" finished-at="2020-10-20T21:26:24 EEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
