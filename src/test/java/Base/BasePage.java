@@ -1,4 +1,4 @@
-package market.tests.pages;
+package Base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

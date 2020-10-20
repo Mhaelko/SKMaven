@@ -1,0 +1,10 @@
+market\tests\MerchantsRegistrationTests.class
+market\tests\pages\MerchantRegistrationPage.class
+Base\BaseTest.class
+com\ac\automation\LoginTests.class
+market\tests\pages\LoginPage.class
+Base\BasePage.class
+market\tests\pages\RegistrationRequestsPage.class
+Base\WebDriverEventListenerImplementation.class
+Base\Test.class
+market\tests\CreateMerchantTest_old.class
