@@ -21,7 +21,7 @@ import java.util.Date;
 
 public class MerchantsRegistrationTests extends BaseTest {
     @Test(dataProvider = "merchDataProvider")
-    @Ignore
+    //@Ignore
     public void fillMerchantRequest(String lastname, String firstname, String secondname,
                                     String birthdate,String sex, String region,
                                     String city,String address, String merchtype,
@@ -45,11 +45,12 @@ public class MerchantsRegistrationTests extends BaseTest {
                 .fillEmail(email)
                 .fillMerchantDescription(merchdescription)
                 .fillAgreement()
+                .submitMerchant()
                 ;
     }
 
     @Test
-    //@Ignore
+    @Ignore
     public void userLogin(){
         LoginPage loginPage = new LoginPage(driver)
                 .goToPage()

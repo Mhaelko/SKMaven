@@ -64,6 +64,9 @@ public class MerchantRegistrationPage extends BasePage {
     @FindBy(id="ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Agreement_Inner")
     private WebElement agreement;
 
+    @FindBy(xpath="//input[@name='ctl00$ContentPlaceHolder1$OpenedReport1$Merchants_registration$Merch_send_request$Inner']")
+    private WebElement submitRequest;
+
     public MerchantRegistrationPage fillLastName(String LastName){
         fillTextField(lastName,LastName);
         return this;
@@ -160,7 +163,16 @@ public class MerchantRegistrationPage extends BasePage {
     }
 
     public MerchantRegistrationPage fillAgreement(){
-        this.agreement.click();
+        agreement.click();
+        return this;
+    }
+    public MerchantRegistrationPage submitMerchant(){
+        submitRequest.click();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return this;
     }
 

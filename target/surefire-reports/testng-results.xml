@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-20T21:25:51 EEST" name="Base Suite" finished-at="2020-10-20T21:26:24 EEST" duration-ms="32995">
+  <suite started-at="2020-10-25T21:18:41 EET" name="Base Suite" finished-at="2020-10-25T21:19:11 EET" duration-ms="29386">
     <groups>
     </groups>
-    <test started-at="2020-10-20T21:25:51 EEST" name="Market Tests" finished-at="2020-10-20T21:26:24 EEST" duration-ms="32995">
+    <test started-at="2020-10-25T21:18:41 EET" name="Market Tests" finished-at="2020-10-25T21:19:11 EET" duration-ms="29386">
       <class name="market.tests.MerchantsRegistrationTests">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:25:51 EEST" name="setUp" finished-at="2020-10-20T21:25:55 EEST" duration-ms="4209" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:41 EET" name="setUp" finished-at="2020-10-25T21:18:46 EET" duration-ms="4618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,50 +16,353 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[less]]>
+                <![CDATA[home]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:25:55 EEST" name="testStart" finished-at="2020-10-20T21:25:55 EEST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:47 EET" name="testStart" finished-at="2020-10-25T21:18:47 EET" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void market.tests.MerchantsRegistrationTests.userLogin()]]>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.fillMerchantRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.String,java.lang.String)]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@4ba02375]]>
+                <![CDATA[[Ljava.lang.Object;@505f45cc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method signature="userLogin()[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:25:55 EEST" name="userLogin" finished-at="2020-10-20T21:26:24 EEST" duration-ms="28733" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:26:24 EEST" name="testEnd" finished-at="2020-10-20T21:26:24 EEST" duration-ms="1" status="PASS">
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:47 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-25T21:18:55 EET" duration-ms="8427" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void market.tests.MerchantsRegistrationTests.userLogin()]]>
+                <![CDATA[Петров]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@4ba02375]]>
+                <![CDATA[Леонид]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Алексеевич]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12/12/1970]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Мужской]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Калининградская область]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Гусев]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Адрм 1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Специалист]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Физическое лицо]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[ФЛП]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Название 1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[1.11111111E8]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[test1@test.test]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Описание 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillMerchantRequest -->
+        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:55 EET" name="testEnd" finished-at="2020-10-25T21:18:55 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.fillMerchantRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@505f45cc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:market.tests.MerchantsRegistrationTests@408b35bf]" started-at="2020-10-20T21:26:24 EEST" name="tearDown" finished-at="2020-10-20T21:26:24 EEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:55 EET" name="testStart" finished-at="2020-10-25T21:18:55 EET" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.fillMerchantRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@994544]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStart -->
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:55 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-25T21:19:01 EET" duration-ms="6055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Попова]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Екатерина]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Дмитриевна]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[21/05/1981]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Женский]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Московская область]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Домодедово]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Адрм 2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Продавец]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Физическое лицо]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[ЗАО]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Посуда топ]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2.22333444E8]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[test2@test.test]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Описание 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillMerchantRequest -->
+        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:01 EET" name="testEnd" finished-at="2020-10-25T21:19:01 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.fillMerchantRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@994544]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnd -->
+        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:01 EET" name="testStart" finished-at="2020-10-25T21:19:01 EET" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.fillMerchantRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5df92089]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStart -->
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:01 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-25T21:19:11 EET" duration-ms="9578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Кукин]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Кеш]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Климович]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[05/03/1977]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Мужской]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Республика Мордовия]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Санкт-Петербург]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Адрм 3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Специалист]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Юридическое лицо]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Самозанятый]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Какое-то]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[4.44555332E8]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[test3@test.test]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Описание 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillMerchantRequest -->
+        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:11 EET" name="testEnd" finished-at="2020-10-25T21:19:11 EET" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void market.tests.MerchantsRegistrationTests.fillMerchantRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5df92089]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:11 EET" name="tearDown" finished-at="2020-10-25T21:19:11 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
