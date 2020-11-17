@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
+<testng-results ignored="5" total="8" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-25T21:18:41 EET" name="Base Suite" finished-at="2020-10-25T21:19:11 EET" duration-ms="29386">
+  <suite started-at="2020-11-12T20:38:17 EET" name="Base Suite" finished-at="2020-11-12T20:38:47 EET" duration-ms="30050">
     <groups>
     </groups>
-    <test started-at="2020-10-25T21:18:41 EET" name="Market Tests" finished-at="2020-10-25T21:19:11 EET" duration-ms="29386">
+    <test started-at="2020-11-12T20:38:17 EET" name="Market Tests" finished-at="2020-11-12T20:38:47 EET" duration-ms="30050">
       <class name="market.tests.MerchantsRegistrationTests">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:41 EET" name="setUp" finished-at="2020-10-25T21:18:46 EET" duration-ms="4618" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:17 EET" name="setUp" finished-at="2020-11-12T20:38:22 EET" duration-ms="4660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,14 +16,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[home]]>
+                <![CDATA[less]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:47 EET" name="testStart" finished-at="2020-10-25T21:18:47 EET" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:23 EET" name="testStart" finished-at="2020-11-12T20:38:23 EET" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,14 +32,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@505f45cc]]>
+                <![CDATA[[Ljava.lang.Object;@2c88a3e8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:47 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-25T21:18:55 EET" duration-ms="8427" status="PASS">
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:23 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-11-12T20:38:47 EET" duration-ms="24396" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -117,10 +117,94 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'BUSINESS', ip: '192.168.3.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a4fda7866ec2c750cbcb4a37139c17d9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'BUSINESS', ip: '192.168.3.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a4fda7866ec2c750cbcb4a37139c17d9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)
+at Base.WebDriverEventListenerImplementation.makeScreenshot(WebDriverEventListenerImplementation.java:170)
+at Base.WebDriverEventListenerImplementation.onException(WebDriverEventListenerImplementation.java:146)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+at com.sun.proxy.$Proxy16.onException(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:108)
+at com.sun.proxy.$Proxy17.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy21.findElement(Unknown Source)
+at market.tests.pages.MerchantRegistrationPage.fillRegion(MerchantRegistrationPage.java:103)
+at market.tests.MerchantsRegistrationTests.fillMerchantRequest(MerchantsRegistrationTests.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillMerchantRequest -->
-        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:55 EET" name="testEnd" finished-at="2020-10-25T21:18:55 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="testEnd" finished-at="2020-11-12T20:38:47 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,14 +213,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@505f45cc]]>
+                <![CDATA[[Ljava.lang.Object;@2c88a3e8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnd -->
-        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:55 EET" name="testStart" finished-at="2020-10-25T21:18:55 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="testStart" finished-at="2020-11-12T20:38:47 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,14 +229,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@994544]]>
+                <![CDATA[[Ljava.lang.Object;@68ac9ec5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:18:55 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-25T21:19:01 EET" duration-ms="6055" status="PASS">
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-11-12T20:38:47 EET" duration-ms="37" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -230,10 +314,91 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'BUSINESS', ip: '192.168.3.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a4fda7866ec2c750cbcb4a37139c17d9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'BUSINESS', ip: '192.168.3.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a4fda7866ec2c750cbcb4a37139c17d9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)
+at Base.WebDriverEventListenerImplementation.makeScreenshot(WebDriverEventListenerImplementation.java:170)
+at Base.WebDriverEventListenerImplementation.onException(WebDriverEventListenerImplementation.java:146)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+at com.sun.proxy.$Proxy16.onException(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:108)
+at com.sun.proxy.$Proxy17.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:166)
+at market.tests.pages.MerchantRegistrationPage.goToPage(MerchantRegistrationPage.java:180)
+at market.tests.MerchantsRegistrationTests.fillMerchantRequest(MerchantsRegistrationTests.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillMerchantRequest -->
-        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:01 EET" name="testEnd" finished-at="2020-10-25T21:19:01 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="testEnd" finished-at="2020-11-12T20:38:47 EET" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -242,14 +407,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@994544]]>
+                <![CDATA[[Ljava.lang.Object;@68ac9ec5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnd -->
-        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:01 EET" name="testStart" finished-at="2020-10-25T21:19:01 EET" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="testStart(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="testStart" finished-at="2020-11-12T20:38:47 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -258,14 +423,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@5df92089]]>
+                <![CDATA[[Ljava.lang.Object;@a50d709]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStart -->
-        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:01 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-10-25T21:19:11 EET" duration-ms="9578" status="PASS">
+        <test-method signature="fillMerchantRequest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.String, java.lang.String)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="fillMerchantRequest" data-provider="merchDataProvider" finished-at="2020-11-12T20:38:47 EET" duration-ms="40" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -343,10 +508,91 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'BUSINESS', ip: '192.168.3.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a4fda7866ec2c750cbcb4a37139c17d9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'BUSINESS', ip: '192.168.3.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a4fda7866ec2c750cbcb4a37139c17d9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)
+at Base.WebDriverEventListenerImplementation.makeScreenshot(WebDriverEventListenerImplementation.java:170)
+at Base.WebDriverEventListenerImplementation.onException(WebDriverEventListenerImplementation.java:146)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+at com.sun.proxy.$Proxy16.onException(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:108)
+at com.sun.proxy.$Proxy17.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:166)
+at market.tests.pages.MerchantRegistrationPage.goToPage(MerchantRegistrationPage.java:180)
+at market.tests.MerchantsRegistrationTests.fillMerchantRequest(MerchantsRegistrationTests.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillMerchantRequest -->
-        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:11 EET" name="testEnd" finished-at="2020-10-25T21:19:11 EET" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="testEnd(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="testEnd" finished-at="2020-11-12T20:38:47 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -355,14 +601,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@5df92089]]>
+                <![CDATA[[Ljava.lang.Object;@a50d709]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:market.tests.MerchantsRegistrationTests@5528a42c]" started-at="2020-10-25T21:19:11 EET" name="tearDown" finished-at="2020-10-25T21:19:11 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:market.tests.MerchantsRegistrationTests@25fb8912]" started-at="2020-11-12T20:38:47 EET" name="tearDown" finished-at="2020-11-12T20:38:47 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
