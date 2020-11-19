@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,98 +7,12 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Base Suite</th></tr>
-<tr><td><a href="#t0">Market Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">30,050</td><td></td><td></td></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Base Suite</th></tr>
+<tr><td><a href="#t0">Market Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">14,595</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Base Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Market Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">market.tests.MerchantsRegistrationTests</td><td><a href="#m0">fillMerchantRequest</a></td><td rowspan="3">1605206327542</td><td rowspan="3">40</td></tr><tr class="failedeven"><td><a href="#m1">fillMerchantRequest</a></td></tr><tr class="failedeven"><td><a href="#m2">fillMerchantRequest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Base Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Market Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">market.selenide.MerchantsRegistrationTests</td><td><a href="#m0">fillMerchantRequest</a></td><td rowspan="1">1605811450038</td><td rowspan="1">14535</td></tr></tbody>
 </table>
-<h2>Market Tests</h2><h3 id="m0">market.tests.MerchantsRegistrationTests#fillMerchantRequest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th></tr><tr class="param stripe"><td>Кукин</td><td>Кеш</td><td>Климович</td><td>05/03/1977</td><td>Мужской</td><td>Республика Мордовия</td><td>Санкт-Петербург</td><td>Адрм 3</td><td>Специалист</td><td>Юридическое лицо</td><td>Самозанятый</td><td>Какое-то</td><td>4.44555332E8</td><td>test3@test.test</td><td>Описание 3</td></tr><tr><th colspan="15">Exception</th></tr><tr><td colspan="15"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=86.0.4240.75)
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;BUSINESS&apos;, ip: &apos;192.168.3.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a4fda7866ec2c750cbcb4a37139c17d9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)
-	at Base.WebDriverEventListenerImplementation.makeScreenshot(WebDriverEventListenerImplementation.java:170)
-	at Base.WebDriverEventListenerImplementation.onException(WebDriverEventListenerImplementation.java:146)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
-	at com.sun.proxy.$Proxy16.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:108)
-	at com.sun.proxy.$Proxy17.get(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:166)
-	at market.tests.pages.MerchantRegistrationPage.goToPage(MerchantRegistrationPage.java:180)
-	at market.tests.MerchantsRegistrationTests.fillMerchantRequest(MerchantsRegistrationTests.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">market.tests.MerchantsRegistrationTests#fillMerchantRequest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th></tr><tr class="param stripe"><td>Петров</td><td>Леонид</td><td>Алексеевич</td><td>12/12/1970</td><td>Мужской</td><td>Калининградская область</td><td>Гусев</td><td>Адрм 1</td><td>Специалист</td><td>Физическое лицо</td><td>ФЛП</td><td>Название 1</td><td>1.11111111E8</td><td>test1@test.test</td><td>Описание 1</td></tr><tr><th colspan="15">Exception</th></tr><tr><td colspan="15"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=86.0.4240.75)
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;BUSINESS&apos;, ip: &apos;192.168.3.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a4fda7866ec2c750cbcb4a37139c17d9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)
-	at Base.WebDriverEventListenerImplementation.makeScreenshot(WebDriverEventListenerImplementation.java:170)
-	at Base.WebDriverEventListenerImplementation.onException(WebDriverEventListenerImplementation.java:146)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
-	at com.sun.proxy.$Proxy16.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:108)
-	at com.sun.proxy.$Proxy17.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy21.findElement(Unknown Source)
-	at market.tests.pages.MerchantRegistrationPage.fillRegion(MerchantRegistrationPage.java:103)
-	at market.tests.MerchantsRegistrationTests.fillMerchantRequest(MerchantsRegistrationTests.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">market.tests.MerchantsRegistrationTests#fillMerchantRequest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th></tr><tr class="param stripe"><td>Попова</td><td>Екатерина</td><td>Дмитриевна</td><td>21/05/1981</td><td>Женский</td><td>Московская область</td><td>Домодедово</td><td>Адрм 2</td><td>Продавец</td><td>Физическое лицо</td><td>ЗАО</td><td>Посуда топ</td><td>2.22333444E8</td><td>test2@test.test</td><td>Описание 2</td></tr><tr><th colspan="15">Exception</th></tr><tr><td colspan="15"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=86.0.4240.75)
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;BUSINESS&apos;, ip: &apos;192.168.3.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a4fda7866ec2c750cbcb4a37139c17d9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)
-	at Base.WebDriverEventListenerImplementation.makeScreenshot(WebDriverEventListenerImplementation.java:170)
-	at Base.WebDriverEventListenerImplementation.onException(WebDriverEventListenerImplementation.java:146)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
-	at com.sun.proxy.$Proxy16.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:108)
-	at com.sun.proxy.$Proxy17.get(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:166)
-	at market.tests.pages.MerchantRegistrationPage.goToPage(MerchantRegistrationPage.java:180)
-	at market.tests.MerchantsRegistrationTests.fillMerchantRequest(MerchantsRegistrationTests.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Market Tests</h2><h3 id="m0">market.selenide.MerchantsRegistrationTests#fillMerchantRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

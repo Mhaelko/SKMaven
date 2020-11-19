@@ -1,0 +1,338 @@
+[1605811450.660][INFO]: Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 25731
+[1605811450.660][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1605811451.431][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "D:\\Telesens\\SKMaven\\build\\downloads\\1605811450067_10892_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "D:\\Telesens\\SKMaven\\build\\downloads\\1605811450067_10892_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1605811451.441][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "D:\\Telesens\\SKMaven\\build\\downloads\\1605811450067_10892_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1605811451.449][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1605811451.452][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\msavenko\AppData\Local\Temp\scoped_dir2460_815017675" data:,
+[1605811452.106][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1605811453.120][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1605811454.153][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "87.0.4280.66",
+      "chrome": {
+         "chromedriverVersion": "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})",
+         "userDataDir": "C:\\Users\\msavenko\\AppData\\Local\\Temp\\scoped_dir2460_815017675"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:58021"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "3dd3262634e892973664d549ff523ada"
+}
+[1605811454.248][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND MaximizeWindow {
+
+}
+[1605811454.248][INFO]: Waiting for pending navigations...
+[1605811454.250][INFO]: Done waiting for pending navigations. Status: ok
+[1605811454.360][INFO]: Waiting for pending navigations...
+[1605811454.361][INFO]: Done waiting for pending navigations. Status: ok
+[1605811454.361][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE MaximizeWindow {
+   "height": 880,
+   "width": 1552,
+   "x": -8,
+   "y": -8
+}
+[1605811454.374][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1605811454.374][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE SetTimeouts
+[1605811454.396][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND Navigate {
+   "url": "https://devcloud.turnkey-lender.com/PluginWebapp/Merchant_Registration/Merchant_Registration.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef"
+}
+[1605811454.396][INFO]: Waiting for pending navigations...
+[1605811454.397][INFO]: Done waiting for pending navigations. Status: ok
+[1605811458.517][INFO]: Waiting for pending navigations...
+[1605811463.596][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.596][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE Navigate
+[1605811463.713][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_firstname_TextBox"
+}
+[1605811463.714][INFO]: Waiting for pending navigations...
+[1605811463.721][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.742][INFO]: Waiting for pending navigations...
+[1605811463.744][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.744][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "62372d63-b855-4b1f-b576-d36de26024af"
+}
+[1605811463.751][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND ClearElement {
+   "id": "62372d63-b855-4b1f-b576-d36de26024af"
+}
+[1605811463.751][INFO]: Waiting for pending navigations...
+[1605811463.751][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.781][INFO]: 
+	=== NOTE: ===
+	The Clear command in ChromeDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1605811463.798][INFO]: Waiting for pending navigations...
+[1605811463.799][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.799][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE ClearElement
+[1605811463.818][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_firstname_TextBox"
+}
+[1605811463.818][INFO]: Waiting for pending navigations...
+[1605811463.819][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.826][INFO]: Waiting for pending navigations...
+[1605811463.826][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.826][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "62372d63-b855-4b1f-b576-d36de26024af"
+}
+[1605811463.835][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND TypeElement {
+   "id": "62372d63-b855-4b1f-b576-d36de26024af",
+   "text": "Ntcn",
+   "value": [ "N", "t", "c", "n" ]
+}
+[1605811463.836][INFO]: Waiting for pending navigations...
+[1605811463.836][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.914][INFO]: Waiting for pending navigations...
+[1605811463.959][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.959][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE TypeElement
+[1605811463.964][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox"
+}
+[1605811463.965][INFO]: Waiting for pending navigations...
+[1605811463.965][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.977][INFO]: Waiting for pending navigations...
+[1605811463.980][INFO]: Done waiting for pending navigations. Status: ok
+[1605811463.980][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "01da5001-d647-4109-96bf-a83dca476421"
+}
+[1605811463.985][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND ClearElement {
+   "id": "01da5001-d647-4109-96bf-a83dca476421"
+}
+[1605811463.985][INFO]: Waiting for pending navigations...
+[1605811463.986][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.026][INFO]: Waiting for pending navigations...
+[1605811464.028][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.028][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE ClearElement
+[1605811464.033][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_middlename_TextBox"
+}
+[1605811464.033][INFO]: Waiting for pending navigations...
+[1605811464.034][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.039][INFO]: Waiting for pending navigations...
+[1605811464.039][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.039][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "01da5001-d647-4109-96bf-a83dca476421"
+}
+[1605811464.045][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND TypeElement {
+   "id": "01da5001-d647-4109-96bf-a83dca476421",
+   "text": "qqqq",
+   "value": [ "q", "q", "q", "q" ]
+}
+[1605811464.045][INFO]: Waiting for pending navigations...
+[1605811464.045][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.114][INFO]: Waiting for pending navigations...
+[1605811464.146][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.146][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE TypeElement
+[1605811464.150][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1605811464.150][INFO]: Waiting for pending navigations...
+[1605811464.151][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.162][INFO]: Waiting for pending navigations...
+[1605811464.164][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.164][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "102aff21-e557-49fc-ba14-000fe71f51b6"
+}
+[1605811464.170][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND ClearElement {
+   "id": "102aff21-e557-49fc-ba14-000fe71f51b6"
+}
+[1605811464.170][INFO]: Waiting for pending navigations...
+[1605811464.171][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.210][INFO]: Waiting for pending navigations...
+[1605811464.246][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.246][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE ClearElement
+[1605811464.252][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1605811464.252][INFO]: Waiting for pending navigations...
+[1605811464.253][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.258][INFO]: Waiting for pending navigations...
+[1605811464.259][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.259][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "102aff21-e557-49fc-ba14-000fe71f51b6"
+}
+[1605811464.265][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND TypeElement {
+   "id": "102aff21-e557-49fc-ba14-000fe71f51b6",
+   "text": "cvvcxvcx",
+   "value": [ "c", "v", "v", "c", "x", "v", "c", "x" ]
+}
+[1605811464.265][INFO]: Waiting for pending navigations...
+[1605811464.265][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.339][INFO]: Waiting for pending navigations...
+[1605811464.367][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.367][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE TypeElement
+[1605811464.373][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_TextBox']//input[@type='text']"
+}
+[1605811464.373][INFO]: Waiting for pending navigations...
+[1605811464.374][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.386][INFO]: Waiting for pending navigations...
+[1605811464.387][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.387][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "709fd840-998e-4abe-9c51-c5d2f9515a46"
+}
+[1605811464.390][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND ClearElement {
+   "id": "709fd840-998e-4abe-9c51-c5d2f9515a46"
+}
+[1605811464.391][INFO]: Waiting for pending navigations...
+[1605811464.393][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.431][INFO]: Waiting for pending navigations...
+[1605811464.433][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.433][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE ClearElement
+[1605811464.437][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_TextBox']//input[@type='text']"
+}
+[1605811464.437][INFO]: Waiting for pending navigations...
+[1605811464.437][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.445][INFO]: Waiting for pending navigations...
+[1605811464.447][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.447][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "709fd840-998e-4abe-9c51-c5d2f9515a46"
+}
+[1605811464.451][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND TypeElement {
+   "id": "709fd840-998e-4abe-9c51-c5d2f9515a46",
+   "text": "10/10/2000",
+   "value": [ "1", "0", "/", "1", "0", "/", "2", "0", "0", "0" ]
+}
+[1605811464.451][INFO]: Waiting for pending navigations...
+[1605811464.452][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.567][INFO]: Waiting for pending navigations...
+[1605811464.572][INFO]: Done waiting for pending navigations. Status: ok
+[1605811464.572][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE TypeElement
+[1605811464.724][INFO]: [3dd3262634e892973664d549ff523ada] COMMAND Quit {
+
+}
+[1605811464.817][INFO]: [3dd3262634e892973664d549ff523ada] RESPONSE Quit
