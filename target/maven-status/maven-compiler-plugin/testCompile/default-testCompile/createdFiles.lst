@@ -1,6 +1,7 @@
 market\tests\MerchantsRegistrationTests.class
 market\tests\pages\MerchantRegistrationPage.class
 Base\BaseTest.class
+Base\TestListener.class
 market\selenide\config\ChromeDriverProvider.class
 market\selenide\MerchantsRegistrationTests.class
 market\selenide\page\MerchantRegistrationPage.class

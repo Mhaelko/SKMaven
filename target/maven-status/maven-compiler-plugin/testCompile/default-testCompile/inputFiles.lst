@@ -5,9 +5,11 @@ D:\Telesens\SKMaven\src\test\java\market\tests\pages\RegistrationRequestsPage.ja
 D:\Telesens\SKMaven\src\test\java\market\selenide\MerchantsRegistrationTests.java
 D:\Telesens\SKMaven\src\test\java\market\tests\CreateMerchantTest_old.java
 D:\Telesens\SKMaven\src\test\java\Base\BasePage.java
+D:\Telesens\SKMaven\src\test\java\Base\TestListener.java
 D:\Telesens\SKMaven\src\test\java\market\tests\MerchantsRegistrationTests.java
 D:\Telesens\SKMaven\src\test\java\Base\WebDriverEventListenerImplementation.java
 D:\Telesens\SKMaven\src\test\java\com\ac\automation\LoginTests.java
 D:\Telesens\SKMaven\src\test\java\rest\SubsTests.java
 D:\Telesens\SKMaven\src\test\java\Base\Test.java
+D:\Telesens\SKMaven\src\test\java\market\selenide\page\MerchantRegistrationPage.java
 D:\Telesens\SKMaven\src\test\java\market\tests\pages\MerchantRegistrationPage.java

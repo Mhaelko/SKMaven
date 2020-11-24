@@ -1,15 +1,20 @@
 package market.selenide;
 
+import Base.BaseTest;
+import Base.TestListener;
 import com.codeborne.selenide.Configuration;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import market.selenide.page.MerchantRegistrationPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class MerchantsRegistrationTests {
+@Listeners(TestListener.class)
+public class MerchantsRegistrationTests extends BaseTest {
     @BeforeClass
     public void setUp(){
         Configuration.browser = "chrome";
@@ -24,9 +29,9 @@ public class MerchantsRegistrationTests {
     public void fillMerchantRequest() {
                 new MerchantRegistrationPage()
                         .goToPage()
-                        .fillFirstName("Ntcn")
-                        .fillSecondName("qqqq")
-                        .fillLastName("cvvcxvcx")
+                        .fillLastName("Тестик")
+                        .fillFirstName("Тест")
+                        .fillSecondName("Тестович")
                         .fillbirthDate("10/10/2000");
 
     }

@@ -9,10 +9,30 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Base Suite</th></tr>
-<tr><td><a href="#t0">Market Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">14,595</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Market Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,127</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Base Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Market Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">market.selenide.MerchantsRegistrationTests</td><td><a href="#m0">fillMerchantRequest</a></td><td rowspan="1">1605811450038</td><td rowspan="1">14535</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Base Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Market Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">market.selenide.MerchantsRegistrationTests</td><td><a href="#m0">fillMerchantRequest</a></td><td rowspan="1">1606242575782</td><td rowspan="1">83808</td></tr></tbody>
 </table>
-<h2>Market Tests</h2><h3 id="m0">market.selenide.MerchantsRegistrationTests#fillMerchantRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Market Tests</h2><h3 id="m0">market.selenide.MerchantsRegistrationTests#fillMerchantRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=87.0.4280.66)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BUSINESS&apos;, ip: &apos;192.168.3.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 44aef98cbbb6f156cebdfc11a10406e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy13.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at Base.BaseTest.makeScreenshotPNG(BaseTest.java:83)
+	at Base.TestListener.onTestFailure(TestListener.java:21)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Base_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Base Suite</span>
+              <span class="suite-name border-failed">Base Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Base_Suite" class="hide-methods passed suite-Base_Suite"> (hide)</a> <!-- hide-methods passed suite-Base_Suite -->
-                      <a href="#" panel-name="suite-Base_Suite" class="show-methods passed suite-Base_Suite"> (show)</a> <!-- show-methods passed suite-Base_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Base_Suite" class="hide-methods failed suite-Base_Suite"> (hide)</a> <!-- hide-methods failed suite-Base_Suite -->
+                      <a href="#" panel-name="suite-Base_Suite" class="show-methods failed suite-Base_Suite"> (show)</a> <!-- show-methods failed suite-Base_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Base_Suite">
+                    <div class="method-list-content failed suite-Base_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Base_Suite" title="market.selenide.MerchantsRegistrationTests" class="method navigator-link" hash-for-method="fillMerchantRequest">fillMerchantRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Base_Suite -->
+                    </div> <!-- method-list-content failed suite-Base_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Base_Suite" class="panel Base_Suite">
-          <div class="suite-Base_Suite-class-passed">
+          <div class="suite-Base_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">market.selenide.MerchantsRegistrationTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,10 +128,32 @@
                   <a name="fillMerchantRequest">
                   </a> <!-- fillMerchantRequest -->
                   <span class="method-name">fillMerchantRequest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=87.0.4280.66)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BUSINESS&apos;, ip: &apos;192.168.3.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\msavenko\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 44aef98cbbb6f156cebdfc11a10406e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy13.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at Base.BaseTest.makeScreenshotPNG(BaseTest.java:83)
+	at Base.TestListener.onTestFailure(TestListener.java:21)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Base_Suite-class-passed -->
+          </div> <!-- suite-Base_Suite-class-failed -->
         </div> <!-- panel Base_Suite -->
         <div panel-name="test-xml-Base_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -193,12 +215,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'fillMerchantRequest')
 data.setCell(0, 2, 'market.selenide.MerchantsRegistrationTests')
-data.setCell(0, 3, 14535);
+data.setCell(0, 3, 83808);
 window.suiteTableData['Base_Suite']= { tableData: data, tableDiv: 'times-div-Base_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Base_Suite">
               </div> <!-- times-div-Base_Suite -->
             </div> <!-- times-div -->
@@ -226,16 +248,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">market.selenide.MerchantsRegistrationTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp(chrome, less)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3901 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">testStart(public void market.selenide.MerchantsRegistrationTests.fillMerchantRequest(), [])</span>
+                <span class="method-start">3935 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">fillMerchantRequest</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-start">4140 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14585 ms</span>
+                <span class="method-start">88093 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

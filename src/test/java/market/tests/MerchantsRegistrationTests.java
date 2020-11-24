@@ -45,7 +45,7 @@ public class MerchantsRegistrationTests extends BaseTest {
                 .fillEmail(email)
                 .fillMerchantDescription(merchdescription)
                 .fillAgreement()
-                .submitMerchant()
+                //.submitMerchant()
                 ;
     }
 

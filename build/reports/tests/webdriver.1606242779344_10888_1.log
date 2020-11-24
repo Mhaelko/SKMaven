@@ -1,0 +1,379 @@
+[1606242779.434][INFO]: Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 41247
+[1606242779.434][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1606242779.890][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "D:\\Telesens\\SKMaven\\build\\downloads\\1606242779322_10888_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "D:\\Telesens\\SKMaven\\build\\downloads\\1606242779322_10888_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1606242779.894][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "D:\\Telesens\\SKMaven\\build\\downloads\\1606242779322_10888_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1606242779.915][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1606242779.919][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\msavenko\AppData\Local\Temp\scoped_dir4408_24324671" data:,
+[1606242780.640][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1606242781.647][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1606242782.656][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "87.0.4280.66",
+      "chrome": {
+         "chromedriverVersion": "87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355})",
+         "userDataDir": "C:\\Users\\msavenko\\AppData\\Local\\Temp\\scoped_dir4408_24324671"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:49266"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "0c347966f00c11ad41e8504c8892104e"
+}
+[1606242782.665][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND MaximizeWindow {
+
+}
+[1606242782.665][INFO]: Waiting for pending navigations...
+[1606242782.667][INFO]: Done waiting for pending navigations. Status: ok
+[1606242782.779][INFO]: Waiting for pending navigations...
+[1606242782.780][INFO]: Done waiting for pending navigations. Status: ok
+[1606242782.780][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE MaximizeWindow {
+   "height": 880,
+   "width": 1552,
+   "x": -8,
+   "y": -8
+}
+[1606242782.787][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1606242782.787][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE SetTimeouts
+[1606242782.815][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND Navigate {
+   "url": "https://devcloud.turnkey-lender.com/PluginWebapp/Merchant_Registration/Merchant_Registration.aspx?SystemClient=95941356-4c04-4bb3-afb7-fb7c2f7651ef"
+}
+[1606242782.815][INFO]: Waiting for pending navigations...
+[1606242782.816][INFO]: Done waiting for pending navigations. Status: ok
+[1606242784.158][INFO]: Waiting for pending navigations...
+[1606242793.277][INFO]: Done waiting for pending navigations. Status: ok
+[1606242793.277][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE Navigate
+[1606242793.518][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242793.518][INFO]: Waiting for pending navigations...
+[1606242793.521][INFO]: Done waiting for pending navigations. Status: ok
+[1606242793.537][INFO]: Waiting for pending navigations...
+[1606242793.538][INFO]: Done waiting for pending navigations. Status: ok
+[1606242793.538][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242793.780][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242793.780][INFO]: Waiting for pending navigations...
+[1606242793.780][INFO]: Done waiting for pending navigations. Status: ok
+[1606242793.788][INFO]: Waiting for pending navigations...
+[1606242793.788][INFO]: Done waiting for pending navigations. Status: ok
+[1606242793.788][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242793.995][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242793.995][INFO]: Waiting for pending navigations...
+[1606242793.997][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.005][INFO]: Waiting for pending navigations...
+[1606242794.005][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.005][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242794.211][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242794.211][INFO]: Waiting for pending navigations...
+[1606242794.212][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.218][INFO]: Waiting for pending navigations...
+[1606242794.219][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.219][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242794.424][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242794.424][INFO]: Waiting for pending navigations...
+[1606242794.425][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.432][INFO]: Waiting for pending navigations...
+[1606242794.433][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.433][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242794.639][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242794.639][INFO]: Waiting for pending navigations...
+[1606242794.639][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.645][INFO]: Waiting for pending navigations...
+[1606242794.645][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.645][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242794.851][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242794.851][INFO]: Waiting for pending navigations...
+[1606242794.852][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.858][INFO]: Waiting for pending navigations...
+[1606242794.859][INFO]: Done waiting for pending navigations. Status: ok
+[1606242794.859][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242795.064][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242795.064][INFO]: Waiting for pending navigations...
+[1606242795.065][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.071][INFO]: Waiting for pending navigations...
+[1606242795.072][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.072][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242795.277][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242795.278][INFO]: Waiting for pending navigations...
+[1606242795.278][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.284][INFO]: Waiting for pending navigations...
+[1606242795.285][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.285][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242795.490][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242795.490][INFO]: Waiting for pending navigations...
+[1606242795.491][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.500][INFO]: Waiting for pending navigations...
+[1606242795.502][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.502][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242795.707][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242795.707][INFO]: Waiting for pending navigations...
+[1606242795.708][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.715][INFO]: Waiting for pending navigations...
+[1606242795.716][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.716][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242795.924][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242795.924][INFO]: Waiting for pending navigations...
+[1606242795.925][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.937][INFO]: Waiting for pending navigations...
+[1606242795.938][INFO]: Done waiting for pending navigations. Status: ok
+[1606242795.938][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242796.145][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242796.145][INFO]: Waiting for pending navigations...
+[1606242796.146][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.152][INFO]: Waiting for pending navigations...
+[1606242796.153][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.153][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242796.358][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242796.358][INFO]: Waiting for pending navigations...
+[1606242796.359][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.367][INFO]: Waiting for pending navigations...
+[1606242796.368][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.368][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242796.573][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242796.573][INFO]: Waiting for pending navigations...
+[1606242796.574][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.579][INFO]: Waiting for pending navigations...
+[1606242796.580][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.580][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242796.785][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242796.785][INFO]: Waiting for pending navigations...
+[1606242796.786][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.792][INFO]: Waiting for pending navigations...
+[1606242796.793][INFO]: Done waiting for pending navigations. Status: ok
+[1606242796.793][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242796.999][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242796.999][INFO]: Waiting for pending navigations...
+[1606242796.999][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.006][INFO]: Waiting for pending navigations...
+[1606242797.007][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.007][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242797.210][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242797.210][INFO]: Waiting for pending navigations...
+[1606242797.211][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.216][INFO]: Waiting for pending navigations...
+[1606242797.217][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.217][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242797.423][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#\\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"
+}
+[1606242797.423][INFO]: Waiting for pending navigations...
+[1606242797.424][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.430][INFO]: Waiting for pending navigations...
+[1606242797.431][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.431][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#\31 ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_surname_TextBox"}
+  (Session info: chrome=87.0.4280.66)
+[1606242797.653][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1606242797.653][INFO]: Waiting for pending navigations...
+[1606242797.654][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.682][INFO]: Waiting for pending navigations...
+[1606242797.683][INFO]: Done waiting for pending navigations. Status: ok
+[1606242797.683][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE ExecuteScript "\u003Chtml class=\"\">\u003Chead id=\"ctl00_Head1\">\u003Cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\u003Ctitle>\n\tMerchant_Registration\n\u003C/title>\u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1...."
+[1606242797.767][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND Screenshot {
+
+}
+[1606242797.767][INFO]: Waiting for pending navigations...
+[1606242797.768][INFO]: Done waiting for pending navigations. Status: ok
+[1606242798.216][INFO]: Waiting for pending navigations...
+[1606242798.217][INFO]: Done waiting for pending navigations. Status: ok
+[1606242798.217][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAAB4AAAAPeCAYAAADtaQdSAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xl0V9W9///nJxPYMEVRgpJqIlRARII4JNVSQtGaFCtwBZXivRJqVShtBfRa0FYB/VXAXqm0thptRUD0C7HlJlSR4JigDQaRCoqCGpBAsQlDLiHT5/dHBjIxB..."
+[1606242871.845][INFO]: [0c347966f00c11ad41e8504c8892104e] COMMAND Quit {
+
+}
+[1606242871.923][INFO]: [0c347966f00c11ad41e8504c8892104e] RESPONSE Quit

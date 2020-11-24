@@ -2,8 +2,10 @@ package Base;
 
 import LESS.Lesson11.FileReaderDemo;
 import LESS.Lesson12.LoggerDemo;
+import io.qameta.allure.Attachment;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -74,5 +76,10 @@ abstract public class BaseTest {
     @AfterMethod
     public void testEnd(Method method, Object[] params){
         LOG.info("Test {} finished ", method.getName());
+    }
+
+    @Attachment(value = "Page screenshot", type = "image/png")
+    public byte[] makeScreenshotPNG () {
+        return driver.getScreenshotAs(OutputType.BYTES);
     }
 }

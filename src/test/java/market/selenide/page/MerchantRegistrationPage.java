@@ -1,6 +1,7 @@
 package market.selenide.page;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -20,20 +21,22 @@ public class MerchantRegistrationPage {
 
     @FindBy(xpath="//*[@id='ctl00_ContentPlaceHolder1_OpenedReport1_Merchants_registration_Merch_common_info_Merch_DOB_TextBox']//input[@type='text']")
     private SelenideElement birthDate;
-
+    @Step("Вводим Фамилию {0}")
     public MerchantRegistrationPage fillLastName(String LastName){
         fillTextField(lastName,LastName);
         return page(MerchantRegistrationPage.class);
     }
+    @Step("Вводим Имя {0}")
     public MerchantRegistrationPage fillFirstName(String FirstName){
         fillTextField(firstName,FirstName);
         return page(MerchantRegistrationPage.class);
     }
+    @Step("Вводим Отчество {0}")
     public MerchantRegistrationPage fillSecondName(String SecondName){
         fillTextField(secondName,SecondName);
         return page(MerchantRegistrationPage.class);
     }
-
+    @Step("Вводим дату рождения {0}")
     public MerchantRegistrationPage fillbirthDate(String BirthDate){
         fillTextField(birthDate,BirthDate);
         return page(MerchantRegistrationPage.class);
