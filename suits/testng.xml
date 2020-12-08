@@ -13,7 +13,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="path" value="less"/>
         <packages>
-            <package name="market.tests"/>
+            <package name="rest"/>
             <!--package name="com.ac.automation"/-->
         </packages>
     </test>

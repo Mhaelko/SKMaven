@@ -3,7 +3,10 @@ package rest;
 import io.restassured.RestAssured;
 import io.restassured.config.LogConfig;
 import io.restassured.response.Response;
+import org.json.simple.JSONObject;
+
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,6 +14,7 @@ import org.apache.logging.log4j.io.IoBuilder;
 
 import static io.restassured.RestAssured.config;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
 
@@ -26,6 +30,7 @@ public class SubsTests {
     }
 
     @Test
+    @Ignore
     public void testAddSubsciber(){
         Response response = given()
                 .log().all()
@@ -39,6 +44,7 @@ public class SubsTests {
     }
 
     @Test
+    @Ignore
     public void testGetAllSubscribers() {
         given()
                 .when()
@@ -52,5 +58,24 @@ public class SubsTests {
                 .body("[0].firstName", equalTo("Peter"))
                 .and()
                 .statusCode(200);
+    }
+
+    @Test
+    public void testCreateSubscriber() {
+        JSONObject json = new JSONObject();
+        json.put("firstName", "Test1");
+        json.put("lastName", "Ltest1");
+        json.put("age", 31);
+        json.put("gender", "f");
+
+        given()
+                .log().all()
+                .header("Content-Type", "application/json")
+                .body(json.toJSONString())
+                .post("/subscribers")
+                .then()
+                .assertThat()
+                .header("Location", containsString("http://localhost:8081/rest/json/subscribers"))
+                .statusCode(201);
     }
 }
